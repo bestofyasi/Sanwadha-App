@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 public class TabNearBy extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.nearby, container, false);
+        View rootView = inflater.inflate(R.layout.activity_tab_nearby, container, false);
         return rootView;
     }
 }
