@@ -2,10 +2,12 @@ package com.winine.www.sanwadha_app;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,6 +23,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -34,8 +37,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,7 +58,7 @@ public class LoginActivity extends AppCompatActivity  {
     EditText username,password;
     ProgressBar progressBar;
 
-
+    static String yy;
     Connection con;
     String un,pass,db,ip;
     @Override
@@ -70,16 +78,36 @@ public class LoginActivity extends AppCompatActivity  {
         un="yasintha";
         pass="perera@123";
 
-        login.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                CheckLogin checkLogin = new CheckLogin();
-                checkLogin.execute("");
-            }
-        });
+        ConnectToDatabase();
 
     }
+
+
+
+    public void ConnectToDatabase(){
+        try {
+
+            // SET CONNECTIONSTRING
+            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
+            String username = "yasintha";
+            String password = "perera@123";
+            Connection DbConn = DriverManager.getConnection("jdbc:jtds:sqlserver://sanwadha-server.database.windows.net/sanwadhaDB;user=" + username + ";password=" + password);
+
+            Log.w("Connection","open");
+            Statement stmt = DbConn.createStatement();
+            ResultSet reset = stmt.executeQuery(" select * from [dbo].[userTable] where userID=1");
+
+            yy=reset.toString();
+
+
+            DbConn.close();
+
+        } catch (Exception e)
+        {
+            Log.w("Error connection","" + e.getMessage());
+        }
+    }
+
 
   // keyboard hide
     public static void hideSoftKeyboard(Activity activity) {
@@ -110,25 +138,6 @@ public class LoginActivity extends AppCompatActivity  {
         }
     }
 
-    //login window
-//    public void Click_login(View view){
-//        Intent i = new Intent(LoginActivity.this,MainTabActivity.class);
-//        startActivity(i);
-//    }
 
-    //sign up window
-    public void Click_signup(View view){
-        Intent i = new Intent(LoginActivity.this,SignupActivity.class);
-        startActivity(i);
-    }
-
-    public class CheckLogin extends AsyncTask<String,String,String> {
-        String z ="";
-
-        @Override
-        protected String doInBackground(String... params) {
-            return null;
-        }
-    }
 }
 
