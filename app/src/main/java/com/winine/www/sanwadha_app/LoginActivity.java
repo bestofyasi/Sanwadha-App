@@ -58,9 +58,7 @@ public class LoginActivity extends AppCompatActivity  {
     EditText username,password;
     ProgressBar progressBar;
 
-    static String yy;
-    Connection con;
-    String un,pass,db,ip;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,41 +71,7 @@ public class LoginActivity extends AppCompatActivity  {
 
        // progressBar.setVisibility(View.GONE);
 
-        ip="sanwadha-server.database.windows.net";
-        db="sanwadhaDB";
-        un="yasintha";
-        pass="perera@123";
-
-        ConnectToDatabase();
-
     }
-
-
-
-    public void ConnectToDatabase(){
-        try {
-
-            // SET CONNECTIONSTRING
-            Class.forName("net.sourceforge.jtds.jdbc.Driver").newInstance();
-            String username = "yasintha";
-            String password = "perera@123";
-            Connection DbConn = DriverManager.getConnection("jdbc:jtds:sqlserver://sanwadha-server.database.windows.net/sanwadhaDB;user=" + username + ";password=" + password);
-
-            Log.w("Connection","open");
-            Statement stmt = DbConn.createStatement();
-            ResultSet reset = stmt.executeQuery(" select * from [dbo].[userTable] where userID=1");
-
-            yy=reset.toString();
-
-
-            DbConn.close();
-
-        } catch (Exception e)
-        {
-            Log.w("Error connection","" + e.getMessage());
-        }
-    }
-
 
   // keyboard hide
     public static void hideSoftKeyboard(Activity activity) {
@@ -138,6 +102,10 @@ public class LoginActivity extends AppCompatActivity  {
         }
     }
 
+    public void Click_login(View v){
+        Intent i = new Intent(LoginActivity.this,MainTabActivity.class);
+        startActivity(i);
+    }
 
 }
 
