@@ -120,21 +120,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="abaedf8fee6ed709d2e6cea0269a3c467c6532a3">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_cbf80fa2e95aa9bae332486dfd518e20ac342f44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Yasintha\.android\build-cache\ba07c32775fbd802eb6cf3873822101b493dbac2\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
         <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc757b2211dc2b1fcee898693852d0a7b538d512\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e9db2dd0812d0aaae57ef67feadbf3e62b67a87d">
-        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_cbf80fa2e95aa9bae332486dfd518e20ac342f44\classes.dex" />
     </item>
     <item
         is-multidex="true"

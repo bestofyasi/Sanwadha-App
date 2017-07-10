@@ -48,11 +48,13 @@
             android:label="@string/title_activity_main_tab"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".StickersActivity">
+
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.winine.www.sanwadha_app.LoginActivity" />
         </activity>
+        <activity android:name=".Model"></activity>
     </application>
 
 </manifest>
