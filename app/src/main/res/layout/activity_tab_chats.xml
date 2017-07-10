@@ -9,13 +9,22 @@
     tools:context="com.winine.www.sanwadha_app.MainTabActivity">
 
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="141dp"
-        android:text="Button"
-        android:onClick="click_Public"/>
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="141dp"-->
+        <!--android:text="Button"-->
+        <!--android:onClick="click_Public"/>-->
+
+    <ListView
+        android:id="@+id/buckysListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"></ListView>
 </RelativeLayout>

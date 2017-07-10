@@ -105,6 +105,13 @@ public class LoginActivity extends AppCompatActivity  {
     public void Click_login(View v){
         Intent i = new Intent(LoginActivity.this,MainTabActivity.class);
         startActivity(i);
+
+    }
+    public void Click_signup(View v){
+        Intent i = new Intent(LoginActivity.this,SignupActivity.class);
+        startActivity(i);
+
+
     }
 
 }

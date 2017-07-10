@@ -3,6 +3,69 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\c9c7f28b1fc93a6a86e3e4ad6025e6fd6bab878d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_10f066004b3b874b168d69cc0abee655db3ab70a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\2312a48a2bca80f16f03a4b1f3609e3a5c12c259\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ef0e8ad0262200dcd8c4ace2a51f35b195252278\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\14cfcc47b1445dfbd561ec1d604ad162f3cf8ecc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b40879c4423de57e20899b611d111288cb1108e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\b9f47192d4ef54fb1383c42f6ad81cb0e263ebaf\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_270bd18adc3a52ac9f5d57bb1405d21053caaf06\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\01ff0f4f78c26e3dd7e4e5a77c0856035fc2cab3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_82c2f21abd459c8f83bde6b6bd5c296f94b242d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e9db2dd0812d0aaae57ef67feadbf3e62b67a87d">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_cbf80fa2e95aa9bae332486dfd518e20ac342f44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\57e86ca79fa5371df40a566f974397ca56babd32\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7113302c965566b66df46c6ca75ea301576114a5">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ace07ba6bbfe787781e57a3e994c7477ef0690f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -12,12 +75,102 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\fda7610c2dcfb25c9076cad75a5cf1aa510edb55\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_38d9152523f875ec809fbd280b720ddce8b450c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\13f13856ae8de8dfc536faf4853b38fd6f7df5e3\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f788b2d990896157111e05be708374ac738151dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_fe36b9e8cfadc3d685eebab7d4afb007233170a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\2562b70ed961025a9704ebea2280ca9080767b5a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8c8f1faf0da04d13e147ca4c3d15d5d132f1e02e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_dd623cb3943bf60b96cabf00ef529d431fb272f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\ba07c32775fbd802eb6cf3873822101b493dbac2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc757b2211dc2b1fcee898693852d0a7b538d512\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Research\Sanwadha-App\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="ebbc31b7a32af0762cbd6b6659dcf91f602ad08c">
+        revision="26.0.0"
+        sha1="e9db2dd0812d0aaae57ef67feadbf3e62b67a87d">
         <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_cbf80fa2e95aa9bae332486dfd518e20ac342f44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\4ee573031e4d24a9df0c505088cbe761bfadfb8f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c25b1be2a7ed514d88065af93144cea6709653e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\0e4fc2f0d0d697178f12bbd8219c6518e6dcc735\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_039490174acb21e57ced7f1b4ae7caa11a09b37f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.1\constraint-layout-solver-1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.1_293c39ad08673e75e73d985eab33c5683588921a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yasintha\.android\build-cache\2f09e653d79b5f55fa1ab9c78fa0cb3a6c19adfb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Research\Sanwadha-App\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2631e878e36c57bedc95298d6481d2b58168b773\classes.dex" />
     </item>
 
 </items>
