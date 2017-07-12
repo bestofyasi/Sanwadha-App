@@ -14,14 +14,15 @@ import java.io.ByteArrayOutputStream;
 
 public class StickersActivity extends AppCompatActivity {
     byte simage[];
-    ImageView imageupload;
+    ImageView imageupload,imageupload2,imageupload3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stickers);
 
         imageupload = (ImageView)findViewById(R.id.imageView);
-
+        imageupload2 = (ImageView)findViewById(R.id.imageView2);
+        imageupload3 = (ImageView)findViewById(R.id.imageView3);
 
         imageupload.setOnClickListener(new View.OnClickListener(){
 
@@ -30,6 +31,26 @@ public class StickersActivity extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent, "Select story image"), 1);
+
+            }
+        });
+        imageupload2.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select story image"), 2);
+
+            }
+        });
+        imageupload3.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View v){
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select story image"), 3);
 
             }
         });
@@ -52,14 +73,26 @@ public class StickersActivity extends AppCompatActivity {
                 imageupload.setImageURI(data.getData());
             }
         }
+        if (resCode == RESULT_OK) {
+            if (reqCode == 2) {
+                imageupload2.setImageURI(data.getData());
+            }
+        }
+        if (resCode == RESULT_OK) {
+            if (reqCode == 3) {
+                imageupload3.setImageURI(data.getData());
+            }
+        }
 
         Bitmap bitmap = ((BitmapDrawable) imageupload.getDrawable()).getBitmap();
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, bos);
         simage = bos.toByteArray();
     }
+
+
     public void click_model(View v){
-        Intent i = new Intent(StickersActivity.this,Model.class);
+        Intent i = new Intent(StickersActivity.this,gifPlaying.class);
         startActivity(i);
     }
 }

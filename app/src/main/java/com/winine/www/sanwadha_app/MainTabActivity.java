@@ -138,7 +138,7 @@ public class MainTabActivity extends AppCompatActivity {
                 case 1:
                     return "Contatcs";
                 case 2:
-                    return "Near By Friends ";
+                    return "Game";
             }
             return null;
         }

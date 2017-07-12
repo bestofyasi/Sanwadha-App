@@ -54,7 +54,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.winine.www.sanwadha_app.LoginActivity" />
         </activity>
-        <activity android:name=".Model"></activity>
+        <activity android:name=".Model" />
+        <activity android:name=".gifPlaying"></activity>
     </application>
 
 </manifest>
