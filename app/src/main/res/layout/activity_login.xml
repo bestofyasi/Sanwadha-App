@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent"
@@ -14,61 +14,83 @@
     android:weightSum="1"
     tools:context="com.winine.www.sanwadha_app.LoginActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="bottom"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="261dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:paddingTop="0dp"
+            app:srcCompat="@drawable/logo"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round"
+            android:hint="\@"
+            android:inputType="textEmailAddress"
+            android:padding="9dp"
+            android:textColorHint="@color/colorHint"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:hint="••••••••••••"
+            android:inputType="textPassword"
+            android:padding="9dp"
+            android:textColorHint="@color/colorHint"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_oval"
+            android:onClick="Click_login"
+            android:padding="9dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="Click_signup"
+            android:text="@string/dont_have_an_account"
+            android:textAlignment="center"
+            android:textColor="@color/colorYellow" />
+
+    </LinearLayout>
     <!-- Login progress -->
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="227dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="109dp"
-        android:layout_weight="0.03"
-        app:srcCompat="@drawable/logo" />
-
-    <EditText
-        android:id="@+id/edtUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/round"
-        android:hint="\@"
-        android:padding="9dp"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/colorHint" />
-
-    <EditText
-        android:id="@+id/edtPass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round"
-        android:hint="••••••••••••"
-        android:inputType="textPassword"
-        android:padding="9dp"
-        android:textColorHint="@color/colorHint" />
 
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/button_oval"
-        android:onClick="Click_login"
-        android:padding="9dp"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:textColor="@color/colorWhite"
-        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/tv_signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginTop="10dp"
-        android:text="@string/dont_have_an_account"
-        android:textAlignment="center"
-        android:textColor="@color/colorYellow"
-        android:onClick="Click_signup"/>
 
-</LinearLayout>
+</FrameLayout>
