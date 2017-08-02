@@ -35,6 +35,11 @@ public class MainTabActivity extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+
+    //drawer
+    private DrawerLayout mDrawerLayout;
+    private  ActionBarDrawerToggle mToggle;
+
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
@@ -46,7 +51,6 @@ public class MainTabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_tab);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
@@ -71,7 +75,14 @@ public class MainTabActivity extends AppCompatActivity {
             }
         });
 
+        //drawer
+//        mDrawerLayout =(DrawerLayout) findViewById(R.id.drawer_layout);
+//        mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.drawerOpen,R.string.drawerClose);
+//
+//        mDrawerLayout.addDrawerListener(mToggle);
+//        mToggle.syncState();
 
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

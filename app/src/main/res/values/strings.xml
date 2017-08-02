@@ -22,4 +22,7 @@
     <string name="dont_have_an_account"><font color="white">Don\'t have an accout yet? </font><b>Sign Up</b></string>
     <string name="title_activity_main_tab">Sanwadha</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClose">Close</string>
 </resources>
