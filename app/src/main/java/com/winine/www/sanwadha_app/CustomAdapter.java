@@ -13,21 +13,21 @@ import android.widget.TextView;
 
 class CustomAdapter extends ArrayAdapter<String>{
     public CustomAdapter(Context context, String[] names) {
-        super(context,R.layout.custom_row ,names);
+        super(context,R.layout.custom_chat_row,names);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater buckysInflater = LayoutInflater.from(getContext());
-        View customView = buckysInflater.inflate(R.layout.custom_row,parent,false);
+        View customView = buckysInflater.inflate(R.layout.custom_chat_row,parent,false);
 
         String singleNameItem = getItem(position);
         TextView buckyText =(TextView) customView.findViewById(R.id.textView);
         ImageView buckysImage = (ImageView) customView.findViewById(R.id.imageView);
 
         buckyText.setText(singleNameItem);
-        buckysImage.setImageResource(R.drawable.ic_person);
+        buckysImage.setImageResource(R.mipmap.ic_person);
         return customView;
 
     }

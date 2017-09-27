@@ -44,7 +44,7 @@ public class TabChats extends Fragment {
 
                         String name = String.valueOf(parent.getItemAtPosition(position));
                         Toast.makeText(getActivity(),name,Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getActivity(), StickersActivity.class);
+                        Intent intent = new Intent(getActivity(), GifViewActivity.class);
                         startActivity(intent);
                     }
                 }

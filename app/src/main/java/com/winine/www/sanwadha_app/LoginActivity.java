@@ -5,6 +5,7 @@ import android.animation.AnimatorListenerAdapter;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.StrictMode;
@@ -39,6 +40,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.apache.http.NameValuePair;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -57,6 +62,14 @@ public class LoginActivity extends AppCompatActivity  {
     Button login;
     EditText username,password;
     ProgressBar progressBar;
+    private static String Serviceurl ;
+    private ProgressDialog pDialog;
+    JSONParser jsonParser = new JSONParser();
+    private static final String TAG_LoginResult = "LoginResult";
+    private static final String TAG_UserID ="UserID";
+
+    String un;
+    String pw;
 
 
     @Override
@@ -103,8 +116,12 @@ public class LoginActivity extends AppCompatActivity  {
     }
 
     public void Click_login(View v){
-        Intent i = new Intent(LoginActivity.this,MainTabActivity.class);
-        startActivity(i);
+        un = username.getText().toString();
+        pw = password.getText().toString();
+        Serviceurl = "http://sanwadhawebservice.azurewebsites.net/Sanwadhaservice.svc/Login/"+un+"/"+pw+"";
+        new LoginAsyn().execute();
+//        Intent i = new Intent(LoginActivity.this,MainTabActivity.class);
+//        startActivity(i);
 
     }
     public void Click_signup(View v){
@@ -113,6 +130,86 @@ public class LoginActivity extends AppCompatActivity  {
 
 
     }
+    class LoginAsyn extends AsyncTask<String, String, String> {
 
+        /**
+         * Before starting background thread Show Progress Dialog
+         * */
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            try {
+                pDialog = new ProgressDialog(LoginActivity.this);
+                pDialog.setMessage("Logging In. Please wait....");
+                pDialog.setIndeterminate(false);
+                pDialog.setCancelable(true);
+                pDialog.show();
+            }catch (Exception e) {
+
+            }
+        }
+
+        /**
+         * Creating product
+         * */
+        protected String doInBackground(String... args) {
+
+
+            // Building Parameters
+            List<NameValuePair> params = new ArrayList<NameValuePair>();
+            String result="false";
+            try {
+                // getting JSON Object
+                // Note that create product url accepts POST method
+                JSONObject json = jsonParser.makeHttpRequest(Serviceurl, "POST", params);
+
+                // check log cat fro response
+                Log.d("Create Response", json.toString());
+
+                // check for success tag
+                try {
+                    JSONObject value = json.getJSONObject(TAG_LoginResult);
+                    String  UserID=value.getString(TAG_UserID);
+
+                    if (value !=null) {
+
+                        // successfully created product
+                        result="true";
+                        Intent i = new Intent(getApplicationContext(), MainTabActivity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("PS_Username", un);
+                        i.putExtras(bundle);
+                        un = null;
+                        startActivity(i);
+
+                        // closing this screen
+                        finish();
+                    } else {
+                        result="false";
+                    }
+                } catch (JSONException e) {
+                    Log.d("Create exc", e.toString());
+                }
+            }catch (Exception e) {
+                Log.d("Create exccc", e.toString());
+            }
+            return result;
+        }
+
+        /**
+         * After completing background task Dismiss the progress dialog
+         * **/
+        protected void onPostExecute(String result) {
+            // dismiss the dialog once done
+            if (result=="false"){
+                pDialog.hide();
+                Toast.makeText(getApplicationContext(), "Login failed ....!", Toast.LENGTH_SHORT).show();
+
+            }else {
+                pDialog.dismiss();
+            }
+        }
+
+    }
 }
 

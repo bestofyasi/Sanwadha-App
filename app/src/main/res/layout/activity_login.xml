@@ -18,21 +18,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:foregroundGravity="bottom"
-        android:gravity="bottom"
+        android:gravity="center"
         android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:weightSum="1"
         tools:ignore="UselessParent">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="261dp"
-            android:layout_height="78dp"
-            android:layout_gravity="center_horizontal"
+            android:layout_width="240dp"
+            android:layout_height="70dp"
+            android:layout_gravity="top|center_horizontal"
             android:layout_marginBottom="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription=""
             android:paddingTop="0dp"
             app:srcCompat="@drawable/logo"
-            android:contentDescription=""
             tools:ignore="ContentDescription" />
 
         <EditText
@@ -42,9 +44,9 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/round"
-            android:hint="\@"
+            android:hint="Username"
             android:inputType="textEmailAddress"
-            android:padding="9dp"
+            android:padding="10dp"
             android:textColorHint="@color/colorHint"
             tools:ignore="HardcodedText" />
 
@@ -55,7 +57,7 @@
             android:background="@drawable/round"
             android:hint="••••••••••••"
             android:inputType="textPassword"
-            android:padding="9dp"
+            android:padding="10dp"
             android:textColorHint="@color/colorHint"
             tools:ignore="HardcodedText" />
 
@@ -65,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/button_oval"
             android:onClick="Click_login"
             android:padding="9dp"

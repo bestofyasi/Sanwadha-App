@@ -10,9 +10,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -25,10 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_login" />
-        <activity android:name=".Main" />
         <!-- <activity android:name=".SignupActivity" -->
         <!-- android:parentActivityName="com.winine.www.sanwadha_app.LoginActivity" -->
         <!-- android:label="Sign Up"> -->
@@ -56,6 +52,10 @@
         </activity>
         <activity android:name=".Model" />
         <activity android:name=".gifPlaying"></activity>
+        <activity android:name=".GifViewActivity"
+            android:label="New Message"
+            android:parentActivityName=".MainTabActivity"></activity>
+
     </application>
 
 </manifest>

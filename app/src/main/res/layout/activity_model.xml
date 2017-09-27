@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.winine.www.sanwadha_app.Model">
+    tools:context="com.winine.www.sanwadha_app.Model"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="1"
+    android:background="@color/colorWhite">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +18,179 @@
         android:background="@drawable/model23"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"></LinearLayout>
+        tools:layout_editor_absoluteY="8dp"
+        android:visibility="gone"></LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.01">
+
+        <EditText
+            android:id="@+id/edtTxtVoice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:hint="Your Message" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:background="@color/colorAccent"/>
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_mic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@android:drawable/ic_btn_speak_now" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/boy"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dad"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/have"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/s1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/s2"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/s3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/teach"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/exam"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dad"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/exam"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/s3"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/dad"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="163dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

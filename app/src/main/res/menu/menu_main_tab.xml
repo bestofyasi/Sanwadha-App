@@ -7,11 +7,5 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
-    <item
-        android:id="@+id/action_search"
-        android:icon="?android:attr/actionModeWebSearchDrawable"
-        android:orderInCategory="200"
-        android:tint="@color/colorWhite"
-        android:title="Search"
-        app:showAsAction="ifRoom"></item>
+
 </menu>

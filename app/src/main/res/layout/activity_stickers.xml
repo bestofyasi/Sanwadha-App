@@ -102,6 +102,17 @@
        android:text="Create GIF"
        android:textColor="@color/colorPrimary"
        android:textSize="20dp" />
+
+   <Button
+       android:id="@+id/btnSpeeckRecog"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/button"
+       android:layout_alignEnd="@+id/textView3"
+       android:layout_alignRight="@+id/textView3"
+       android:layout_marginBottom="27dp"
+       android:text="MIC"
+       android:onClick="clickSpeech"/>
 </RelativeLayout>
 
 

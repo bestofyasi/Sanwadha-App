@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+
 import java.io.ByteArrayOutputStream;
 
 public class StickersActivity extends AppCompatActivity {
@@ -93,6 +94,11 @@ public class StickersActivity extends AppCompatActivity {
 
     public void click_model(View v){
         Intent i = new Intent(StickersActivity.this,gifPlaying.class);
+        startActivity(i);
+    }
+
+    public void clickSpeech(View v){
+        Intent i = new Intent(StickersActivity.this,GifViewActivity.class);
         startActivity(i);
     }
 }

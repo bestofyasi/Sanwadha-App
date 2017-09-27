@@ -6,4 +6,7 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorHint">#E4C3DA</color>
     <color name="colorAccent">#FBC514</color>
+
+    <color name="status_hearing">#fa1326</color>
+    <color name="status_not_hearing">#c7c7c7</color>
 </resources>
